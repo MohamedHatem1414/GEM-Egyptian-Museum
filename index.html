@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المتحف المصري الكبير</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- شاشة البداية (الانترو) -->
+<div id="intro">
+  <div class="intro-wrapper"> <img src="Image/4.png" alt="المتحف المصري الكبير" class="intro-logo">
+    <h2 class="name">BY: Mohamed Hatem & Youssef Mahmoud
+    </h2>
+  </div>
+</div>
+
+<div id="main-content" ></div>
+  
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const intro = document.getElementById('intro');
+    const mainContent = document.getElementById('main-content');
+
+    if (!sessionStorage.getItem("intro_shown")) {
+      // لو أول مرة يفتح الموقع
+      setTimeout(() => {
+        intro.style.opacity = '0'; // هيختفوا مع بعض الـ Fade out
+        setTimeout(() => {
+          intro.style.display = 'none';
+          mainContent.style.display = 'block';
+          sessionStorage.setItem("intro_shown", "true");
+        }, 1000);
+      }, 3000);
+    } else {
+      // لو رجع للصفحة تاني
+      intro.style.display = 'none';
+      mainContent.style.display = 'block';
+    }
+  });
+</script>
+
+<div id="dust-container"></div>
+
+  
+<header>
+  <h1>المتحف المصري الكبير</h1>
+  <br>
+  <p>دليل تفاعلي للتراث المصري</p>
+</header>
+
+<nav>
+  <a href="artifacts.html">القطع الأثرية</a>
+  <a href="halls.html">قاعات المتحف</a>
+  <a href="admin.html">لوحة التحكم</a>
+</nav>
+
+
+<section class="about">
+  <h2>عن المتحف</h2>
+  <p>المتحف المصري، قلب التاريخ والحضارة المصرية القديمة، بيتجمع فيه آلاف القطع الأثرية اللي بتحكي قصة مصر منذ آلاف السنين. من المومياوات الفرعونية لغاية التماثيل والمعابد الذهبية، كل زاوية هنا بتحكي حكاية عن عبقرية المصريين القدماء وفنهم اللي ما ليهوش مثيل. زيارة المتحف تجربة لا تُنسى لعشاق التاريخ والثقافة، وفرصة لتغوص في أعماق حضارة أثرية خلدت اسم مصر عبر العصور. </p>
+</section>
+<img src="Image/1.jpeg" alt="المتحف المصري">
+
+
+
+
+<div class="card1">
+    <h3>افتتاح المتحف</h3>
+    <p>1 نوفمبر 2025</p>
+</div>
+
+
+
+<section class="history">
+  <h2>تاريخ المتحف المصري الكبير</h2>
+  <p>المتحف المصري الكبير بدأ التخطيط لبنائه في أوائل القرن الواحد وعشرين بالقرب من أهرامات الجيزة، واستغرق بناؤه أكثر من عشرين سنة ليصبح أكبر متحف أثري في العالم. شارك في إنشائه مهندسون وعلماء آثار مصريون وأجانب لضمان حفظ وعرض القطع الأثرية بشكل آمن وحديث. يضم المتحف آلاف القطع النادرة، من أهمها تماثيل ضخمة للفراعنة، كنوز الملك توت عنخ آمون، ومومياوات ملكية، بالإضافة إلى أدوات وأعمال فنية من مختلف العصور المصرية القديمة. يمثل المتحف إنجازًا حضاريًا ومعماريًا لمصر، ويتيح للزوار فرصة التعرف على عظمة تاريخ مصر وحضارتها العريقة في مكان واحد.</p>
+</section>
+<img src="Image/2.jpg" alt="المتحف المصري" >
+    
+
+
+
+
+<div class="visit">
+   <h2>زيارة المتحف</h2>
+   <p>
+    الأيام: السبت إلى الخميس<br>
+    ساعات العمل: من 9 صباحًا حتى 5 مساءً<br>
+    يوم الجمعة: من 1 ظهرًا حتى 5 مساءً<br>
+    ملاحظة: ينصح بالحجز المسبق للجولات الخاصة والمعارض الكبرى
+   </p>
+</div>
+
+
+<div class="greatness">
+   <h2>عظمة المتحف</h2>
+   <p>
+    المساحة: أكبر متحف أثري في العالم مخصص لحضارة واحدة.<br>
+    عدد القطع: بيضم أكتر من 100 ألف قطعة أثرية من مختلف العصور.  <br>
+    المسلة المعلقة: أول مسلة معلقة في العالم اللي بتستقبل الزوار في المدخل. <br>
+    
+   </p>
+</div>
+
+<img src="Image/3.jpg" alt="المسلة المعلقة" >
+
+
+<section class="importance-section">
+  <h2>أهمية المتحف المصري الكبير</h2>
+  <div class="content-wrapper">
+    <p>
+      يعتبر المتحف المصري الكبير ليس مجرد صرح معماري، بل هو <strong>أكبر متحف أثري في العالم</strong> مخصص لحضارة واحدة. تكمن أهميته في كونه البيت الجديد لأكثر من 100 ألف قطعة أثرية تحكي قصة الإنسان المصري عبر العصور.
+    </p>
+    <ul>
+      <li><strong>حماية التراث العالمي:</strong> يضم معامل ترميم هي الأحدث عالمياً لضمان بقاء الآثار للأجيال القادمة.</li>
+      <li><strong>مجموعة الملك الذهبي:</strong> لأول مرة، سيتم عرض كنوز الملك توت عنخ آمون كاملة في مكان واحد.</li>
+      <li><strong>واجهة سياحية عالمية:</strong> يربط المتحف بين الماضي والحاضر بموقعه الاستراتيجي أمام أهرامات الجيزة مباشرة.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>اتصل بنا</h3>
+      <p>العنوان: هضبة الأهرام، نهاية طريق القاهرة - الإسكندرية الصحراوي، بالجيزة، مصر</p>
+      <p>الهاتف: 02 12345678</p>
+      <p>البريد: info@gem.gov.eg</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>روابط سريعة</h3>
+      <a href="index.html">الرئيسية</a> |
+      <a href="artifacts.html">القطع الأثرية</a> | 
+      <a href="halls.html">قاعات المتحف</a> | 
+      <a href="admin.html">لوحة التحكم</a>
+    </div>
+
+    <div class="footer-section">
+      <p>جميع الحقوق محفوظة © 2025 - المتحف المصري الكبير</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+    const container = document.getElementById('dust-container');
+    const particleCount = 500; // زودنا العدد لـ 500 عشان تكون "زحمة" أكتر
+
+    const colors = ['#c2b280', '#d2b48c', '#bc8f8f', '#a67c52']; // باليتة ألوان ترابية
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'dust-particle';
+        
+        // مقاسات مختلفة للذرات
+        const size = Math.random() * 10 + 1 + 'px'; 
+        particle.style.width = size;
+        particle.style.height = size;
+        
+        particle.style.left = Math.random() * 150 + 'vw';
+        
+        // لون عشوائي من القائمة اللي فوق
+        particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        
+        // سرعة هادية (بين 8 و 15 ثانية)
+        const duration = Math.random() * 7 + 8 + 's';
+        particle.style.animationDuration = duration;
+        
+        // تأخير عشوائي عشان التوزيع يكون منتظم
+        particle.style.animationDelay = Math.random() * 15 + 's';
+
+        container.appendChild(particle);
+    }
+</script>
+
+<script type="module" src="js/main.js"></script>
+
+
+</body>
+</html>
